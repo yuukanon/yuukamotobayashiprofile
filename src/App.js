@@ -6,20 +6,22 @@ import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <Router>
       <div>
-      <Navbar />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/aboutme' component={AboutMe} />
-        <Route path='/skills' component={Skills} />
-        <Route path='/project' component={Project} />
-        <Route path='/contact' component={Contact} />
-      </Switch>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/aboutme' component={AboutMe} />
+          <Route path='/skills' component={Skills} />
+          <Route path='/project' component={Project} />
+          <Route path='/contact' component={Contact} />
+        </Switch>
+        <Footer />
       </div>
     </Router>
   );
