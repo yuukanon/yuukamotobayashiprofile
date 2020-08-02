@@ -1,16 +1,11 @@
 import React from 'react';
-// import pic from './public/images/IMG_4339.jpg'
-import pic2 from './logo512.png';
+import pic from './IMG_4339.jpg'
 
-console.log(pic2)
 const AboutMe = () => {
 
   return(
     <div>
-     {/* <img src={pic} alt="profile"/> */}
-     {/* <img src={require("./logo512.png")} alt=""/>; */}
-     <img src={pic2} alt=""/>;
-
+     <img src={pic} alt="profile"/>
     </div>
   )
 }
