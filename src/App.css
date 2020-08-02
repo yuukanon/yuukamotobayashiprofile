@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About Me */
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  width: 80%;
+  margin: auto;
+}
+.profile img {
+  width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
