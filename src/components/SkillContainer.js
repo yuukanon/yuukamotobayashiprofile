@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillCard from './SkillCard';
+import TimeLine2 from './TimeLine2';
 
 const SkillContainer = (props) => {
   return(
@@ -11,6 +12,7 @@ const SkillContainer = (props) => {
            eachList => <SkillCard {...eachList} key={eachList.skill} />
          )
        }
+       
      </div>
     </>  
     

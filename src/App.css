@@ -1,7 +1,13 @@
 * {
+  font-family: 'Mukta', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 85%;
+  margin: auto;
 }
 
 /* About Me */
@@ -9,12 +15,10 @@
   display: flex;
   justify-content: space-evenly;
   font-size: 25px;
-  width: 80%;
-  margin: auto;
 }
 .profile img {
-  width: 50%;
-  border-radius: 10px;
-  height: auto;
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
 }
 

@@ -10,17 +10,21 @@ import Footer from './components/Footer';
 
 
 function App() {
+ 
+  
   return (
     <Router>
       <div>
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/aboutme' component={AboutMe} />
-          <Route path='/skills' component={Skills} />
-          <Route path='/project' component={Project} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
+          <body>
+            <Route path='/aboutme' component={AboutMe} />
+            <Route path='/skills' component={Skills} />
+            <Route path='/project' component={Project} />
+            <Route path='/contact' component={Contact} />
+            </body>
+          </Switch>
         <Footer />
       </div>
     </Router>
@@ -39,5 +43,6 @@ const Home = () => {
       
   )
 }
+
 
 export default App;
