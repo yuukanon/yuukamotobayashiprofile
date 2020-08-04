@@ -14,6 +14,27 @@ h3 {
   font-size: 40px;
 }
 
+ul, li {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+li:hover {
+  background: lightsalmon;
+}
+
+/* Home */
+header > img {
+  background: no-repeat center center/cover;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  opacity: .8;
+}
+
 /* About Me */
 .profile {
   display: flex;
