@@ -1,6 +1,6 @@
 * {
-  font-family: 'Mukta', sans-serif;
-  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Poppins', sans-serif;  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -8,6 +8,10 @@
 body {
   width: 85%;
   margin: auto;
+}
+
+h3 {
+  font-size: 40px;
 }
 
 /* About Me */
@@ -22,3 +26,39 @@ body {
   border-radius: 20px;
 }
 
+/* Contact form */
+.form-field {
+  margin-top: 20px;
+}
+
+input {
+  border-style: hidden;
+  border-bottom: solid lightsalmon;
+  width: 640px;
+  font-size: 20px;
+  outline: none;
+}
+
+.project {
+  border-style: hidden;
+  border-bottom: solid lightsalmon;
+  width: 640px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  outline: none;
+}
+
+.submit {
+  border-style: hidden;
+  width: 100px;
+  font-size: 25px;
+  background: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: lightsalmon;
+  color: white;
+}
