@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-container">
       <h3>Tell me what you are looking for!</h3>
       <form className="contact-form" method="POST" action="/contact">
         <div className="form-field">
