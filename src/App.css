@@ -182,6 +182,22 @@ header > img {
   text-align: center;
 }
 
+.skillpage {
+  display: flex;
+}
+
+.programming {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+.programming img {
+  width: 50%;
+  height: auto;
+}
+
 /* Contact form */
 .form-field {
   margin-top: 20px;
