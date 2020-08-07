@@ -1,11 +1,10 @@
 import React from 'react';
 import SkillCard from './SkillCard';
-import TimeLine2 from './TimeLine2';
 
 const SkillContainer = (props) => {
   return(
     <>
-     <h1>Skills</h1>
+     <h1>Programming</h1>
      <div className="skillcontainer">
        {
          props.list.map(

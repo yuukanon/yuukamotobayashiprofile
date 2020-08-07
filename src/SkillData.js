@@ -1,35 +1,36 @@
 const SkillData = {
   list: [
+   
     {
-      skill: 'Project Management',
-      level: 'Intermediate',
-      since: '2004 ~', 
-      summary: 'Lorem',
-      percentage: 90
-    },
-    {
-      skill: 'HTML',
+      programming: 'HTML',
       level: 'Beginner',
       since: '2020 ~', 
       summary: 'Lorem',
-      percentage: 65
+      percentage: 75
 
     },
     {
-      skill: 'CSS',
+      programming: 'CSS',
       level: 'Beginner',
       since: '2020 ~', 
       summary: 'Lorem',
-      percentage: 65
+      percentage: 70
 
     },
     {
-      skill: 'Javascript',
+      programming: 'React',
+      level: 'Beginner',
+      since: '2020 ~', 
+      summary: 'Lorem',
+      percentage: 45
+
+    },
+    {
+      programming: 'Javascript',
       level: 'Beginner',
       since: '2020 ~', 
       summary: 'Lorem',
       percentage: 35
-
     }
   ]
 }
