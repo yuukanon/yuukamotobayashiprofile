@@ -7,7 +7,12 @@ import Skills from './components/Skills';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+
+library.add(fab, faEnvelope)
 
 function App() {
  

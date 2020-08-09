@@ -26,6 +26,10 @@ li:hover {
   background: lightsalmon;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+}
+
 /* Home */
 header > img {
   background: no-repeat center center/cover;
@@ -183,17 +187,10 @@ header > img {
 }
 
 .skillpage {
-  display: flex;
+  display: flex;  
 }
 
-.programming {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-
-}
-
-.programming img {
+.skillpage img {
   width: 50%;
   height: auto;
 }
@@ -234,6 +231,25 @@ input {
   background: lightsalmon;
   color: white;
 }
+
+/* Footer */
+
+.icon{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+
+.icon a {
+  color: lightsalmon;
+}
+
+.linkedin, .github, .envelope {
+  padding: 20px;
+  color: lightsalmon;
+}
+
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 /* Timeline */

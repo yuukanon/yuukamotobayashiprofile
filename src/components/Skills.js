@@ -67,7 +67,7 @@ const Skills = () => {
           <button onClick={closeModal1}>close</button>
         </Modal>
       
-      <div className="programming" onClick={openModal2}>
+      <div className="business" onClick={openModal2}>
         <img src={pic1} alt=""/>
         <h2>Programming</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, animi!</p>
@@ -80,7 +80,7 @@ const Skills = () => {
           <button onClick={closeModal2}>close</button>
         </Modal>
 
-      <div className="programming" onClick={openModal3}>
+      <div className="language" onClick={openModal3}>
         <img src={pic1} alt=""/>
         <h2>Programming</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, animi!</p>
