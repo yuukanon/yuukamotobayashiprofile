@@ -6,7 +6,7 @@ import BusinessData from '../BusinessData';
 import LanguageContainer from './LanguageContainer';
 import LanguageData from '../LanguageData';
 import Modal from 'react-modal';
-import pic1 from './IMG_4339.jpg'
+import pic1 from './IMG_4339.jpg';
 
  
 const customStyles = {

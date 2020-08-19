@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
+import Skills2 from './components/Skills2';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ function App() {
           <div className="main-body">
             <Route path='/aboutme' component={AboutMe} />
             <Route path='/skills' component={Skills} />
+            <Route path='/skills2' component={Skills2} />
             <Route path='/project' component={Project} />
             <Route path='/contact' component={Contact} />
             </div>
