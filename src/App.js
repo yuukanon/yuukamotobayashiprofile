@@ -19,19 +19,17 @@ function App() {
   
   return (
     <Router>
-      <div>
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <body>
+          <div className="main-body">
             <Route path='/aboutme' component={AboutMe} />
             <Route path='/skills' component={Skills} />
             <Route path='/project' component={Project} />
             <Route path='/contact' component={Contact} />
-            </body>
+            </div>
           </Switch>
         <Footer />
-      </div>
     </Router>
   );
 }

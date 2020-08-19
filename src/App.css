@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+.main-body {
   width: 85%;
   margin: auto;
   background-color: #eee;
@@ -34,7 +34,7 @@ a:link, a:visited {
 header > img {
   background: no-repeat center center/cover;
   height: auto;
-  max-width: 100%;
+  width: 100%;
   position: relative;
   margin-bottom: 30px;
   opacity: .8;
