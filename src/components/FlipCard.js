@@ -1,53 +1,15 @@
 import React from 'react';
-import ReactCardFlip from 'react-card-flip';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CardJs from './CardJs';
+import CardReact from './CardReact';
 
 
-class FlipCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isFlipped: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(event) {
-    event.preventDefault();
-    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
-  }
-
-  render() {
-    return (
-      <>
-        <ReactCardFlip 
-        isFlipped={this.state.isFlipped}
-        flipSpeedBackToFront={2}
-        flipSpeedFrontToBack={2}
-        >
-            <div className="front react">
-              <FontAwesomeIcon icon={['fab', 'react']} size="10x" onClick={this.handleClick}/>
-            </div>
-
-            <div className="back react" onClick={this.handleClick}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, hic!
-            </div>        
-        </ReactCardFlip>
-
-        <ReactCardFlip 
-        isFlipped={this.state.isFlipped}
-        flipSpeedBackToFront={2}
-        flipSpeedFrontToBack={2}
-        >
-          <div>
-            <FontAwesomeIcon icon={['fab', 'js']} size="10x" onClick={this.handleClick}/>
-          </div>
-
-          <div onClick={this.handleClick}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, hic!
-          </div>        
-        </ReactCardFlip>
-      </>
-    );
-  }
+const FlipCard = () => {
+  return (
+    <>
+      <CardReact />
+      <CardJs />
+    </>
+  )
 }
 
 export default FlipCard;

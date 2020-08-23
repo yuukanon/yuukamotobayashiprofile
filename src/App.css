@@ -15,22 +15,10 @@ h3 {
   font-size: 40px;
 }
 
-ul, li {
-  display: flex;
-  padding: 10px;
-  justify-content: space-around;
-  text-decoration: none;
-}
 
-li:hover {
-  border-bottom: solid 1px lightsalmon;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-}
 
 /* Home */
+
 header > img {
   background: no-repeat center center/cover;
   height: auto;
@@ -39,6 +27,44 @@ header > img {
   margin-bottom: 30px;
   opacity: .8;
 }
+
+/* Burger */
+.burger {
+  color: black;
+  padding: 20px;
+  display: none;
+  justify-content: flex-end;
+  position: absolute;
+  right: 16px;
+  background: transparent;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+ul, li {
+  text-decoration: none;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  /* position: relative; */
+}
+
+li:hover {
+  border-bottom: solid 1px lightsalmon;
+}
+
+a:link, a:visited {
+  background-color: transparent;
+  color: white;
+}
+
 
 /* About Me */
 .profile {
@@ -148,7 +174,7 @@ header > img {
 
 .timelinecontent {
   padding: 20px 30px;
-  background-color: white;
+  border: white solid 2px;
   position: relative;
   border-radius: 6px;
 }
@@ -248,12 +274,9 @@ input {
 
 .icon a {
   color: lightsalmon;
+  padding: 20px;
 }
 
-.linkedin, .github, .envelope {
-  padding: 20px;
-  color: lightsalmon;
-}
 
 
 

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState }from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Burger from './components/Burger';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Skills2 from './components/Skills2';
@@ -16,11 +17,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faEnvelope)
 
 function App() {
- 
+  const [open, setOpen] = useState(false);
   
   return (
     <Router>
-        <Navbar />
+        <Burger open={open} setOpen={setOpen} />
+        <Navbar open={open} setOpen={setOpen} />
         <Switch>
           <Route exact path='/' component={Home} />
           <div className="main-body">
