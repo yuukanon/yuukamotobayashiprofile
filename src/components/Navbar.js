@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { bool } from 'prop-types';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-
-const Navbar = ({ open }) => {
+const Navbar = () => {
   
 
   return(
       <>
-       <div open={open} className="navbar">  
+        <div className="burger">
+          <FontAwesomeIcon icon={faBars} size='3x' />
+        </div>
+
+       <div className="navbar">  
         <ul>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/aboutme'>About Me</Link></li>
@@ -23,8 +27,6 @@ const Navbar = ({ open }) => {
   )
 }
 
-Navbar.propTypes = {
-  open: bool.isRequired,
-}
+
 
 export default Navbar;

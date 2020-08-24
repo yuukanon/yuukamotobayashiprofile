@@ -19,11 +19,15 @@ h3 {
 
 /* Home */
 
+header {
+  position: relative;
+
+}
+
 header > img {
   background: no-repeat center center/cover;
   height: auto;
   width: 100%;
-  position: relative;
   margin-bottom: 30px;
   opacity: .8;
 }
@@ -32,7 +36,7 @@ header > img {
 .burger {
   color: black;
   padding: 20px;
-  display: none;
+  display: block;
   justify-content: flex-end;
   position: absolute;
   right: 16px;
@@ -43,6 +47,7 @@ header > img {
 .navbar {
   background-color: transparent;
   overflow: hidden;
+  position: absolute;
 }
 
 ul, li {
