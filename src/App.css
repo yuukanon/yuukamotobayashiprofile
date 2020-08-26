@@ -19,12 +19,11 @@ h3 {
 
 /* Home */
 
-header {
+.home {
   position: relative;
-
 }
 
-header > img {
+.home > img {
   background: no-repeat center center/cover;
   height: auto;
   width: 100%;
@@ -32,7 +31,7 @@ header > img {
   opacity: .8;
 }
 
-/* Burger */
+/* Navbar */
 .burger {
   color: black;
   padding: 20px;
@@ -43,11 +42,14 @@ header > img {
   background: transparent;
 }
 
-/* Navbar */
 .navbar {
-  background-color: transparent;
+  background: white;
   overflow: hidden;
   position: absolute;
+  padding: 20px;
+  display: block;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 ul, li {
@@ -55,10 +57,11 @@ ul, li {
   float: right;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  /* position: relative; */
+  position: relative;
 }
 
 li:hover {

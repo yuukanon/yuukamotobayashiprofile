@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Skills2 from './components/Skills2';
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar />
+      <Navbar2 />
       <Switch>
         <Route exact path='/' component={Home} />
         <div className="main-body">
@@ -38,13 +38,13 @@ function App() {
 
 const Home = () => {
   return (
-    <header>
+    <div className="home">
       <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80" alt="" />
       <div className='name'>
         <h3>Hello, I am Yuuka Motobayashi and</h3>
         <h1>Project Management Professinal, Front End Web Developer</h1>
       </div>
-    </header>
+    </div>
 
   )
 }
