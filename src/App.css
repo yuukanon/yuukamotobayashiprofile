@@ -16,11 +16,10 @@ h3 {
 }
 
 
-
 /* Home */
 
 .home {
-  position: relative;
+  width: 100%;
 }
 
 .home > img {
@@ -32,9 +31,9 @@ h3 {
 }
 
 /* Navbar */
-.burger {
+.burgerOn {
   color: black;
-  padding: 20px;
+  padding: 0px 20px 5px 0px;
   display: block;
   justify-content: flex-end;
   position: absolute;
@@ -42,37 +41,53 @@ h3 {
   background: transparent;
 }
 
-.navbar {
-  background: white;
-  overflow: hidden;
-  position: absolute;
-  padding: 20px;
-  display: block;
-  justify-content: flex-end;
-  height: 100%;
+.burgerOff {
+  display: none;
 }
 
-ul, li {
-  text-decoration: none;
-  float: right;
+.navOpen {
+  color: black;
+  display: block;
+  justify-content: flex-end;
+  position: absolute;
+  right: 16px;
+  background: transparent;
+  transform: translateX(-100%);
+  /* transition: width 2s, transform 1s;
+  transition-timing-function: linear;
+  transition-property: width; */
+
+  /* transition: transform .8s; */
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  position: relative;
+}
+
+li a {
+  padding: 10px 5px;
+  text-decoration: none;
+  display: block;  
+  text-transform: uppercase;
+  transition: width 2s, transform 1s;
 }
 
 li:hover {
-  border-bottom: solid 1px lightsalmon;
+  border-bottom: solid 2px lightsalmon;
 }
 
 a:link, a:visited {
   background-color: transparent;
-  color: white;
+  color: black;
 }
 
+.navOff {
+  display: none;
+}
 
 /* About Me */
 .profile {

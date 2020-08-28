@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar2 from './components/Navbar2';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Skills2 from './components/Skills2';
@@ -16,14 +17,13 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faEnvelope)
 
 function App() {
-  // const [open, setOpen] = useState(false);
 
   return (
     <Router>
-      <Navbar2 />
+      <Navbar />
       <Switch>
-        <Route exact path='/' component={Home} />
-        <div className="main-body">
+      <Route exact path='/' component={Home} />
+      <div className="main-body">
           <Route path='/aboutme' component={AboutMe} />
           <Route path='/skills' component={Skills} />
           <Route path='/skills2' component={Skills2} />
@@ -34,19 +34,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
-
-const Home = () => {
-  return (
-    <div className="home">
-      <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80" alt="" />
-      <div className='name'>
-        <h3>Hello, I am Yuuka Motobayashi and</h3>
-        <h1>Project Management Professinal, Front End Web Developer</h1>
-      </div>
-    </div>
-
-  )
 }
 
 
