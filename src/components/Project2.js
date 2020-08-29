@@ -1,5 +1,6 @@
 import React from 'react';
 import pic1 from './weather.png';
+import Weather from './Weather'; 
 
 
 
@@ -9,6 +10,7 @@ const Project = () => {
       <div className="p1">
         <img src={pic1} alt="weather"/>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, fuga!</p>
+        <div><Weather /></div>
       </div>
       <div className="p2">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, fuga!</p>
