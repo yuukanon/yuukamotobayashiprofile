@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Skills2 from './components/Skills2';
-import Project from './components/Project';
+import Project from './components/Project2';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core'

@@ -34,7 +34,7 @@ class Contact extends React.Component {
 
           <div className="form-field">
             <label htmlFor="message">
-              <textarea className="project" name="message" placeholder="*Tell me your project"rows="6" required />
+              <textarea className="contact-project" name="message" placeholder="*Tell me your project"rows="6" required />
             </label>
           </div>
 
