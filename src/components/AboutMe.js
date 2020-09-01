@@ -8,7 +8,12 @@ const AboutMe = () => {
     <>
       <div className="profile">
         <img src={pic} alt="profile"/>
-        <p>Creative and entrepreneurial marketing leader with a knack for developing effective technology roadmaps and expert ability to use analytics and data-driven decision making to deliver marketing and business solutions.As a collaborative professional, I know how to effectively manage projects and implementations that deliver actionable results. My dedication to the craft has enabled me to align core business, revenue, and growth goals within long-range strategic plans.</p>
+        <div>
+
+          <h3>Not Just a Front End Web Developer but also Certified Project Management Professional</h3><br></br>
+          <p>Offering 10+ years of progressive achievement managing projects, overseeing systems implementations, and translating business strategies into effective operational processes and system integration requirements.</p><br></br>
+          <p>Results-oriented Front-end Developer dedicated to creating and optimizing interactive, user-friendly, and feature-rich websites. Building new websites from start to finish by gathering clients' business requirements and providing techncal knowledge and expertise. </p>
+        </div>
       </div>
       
        <TimeLine />

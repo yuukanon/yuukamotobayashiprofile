@@ -10,8 +10,8 @@
 
 .main-body {
   width: 85%;
-  margin: auto;
-  margin-top: 50px;
+  margin: auto; 
+  margin-top: 50px; 
 }
 
 h3 {
@@ -25,13 +25,19 @@ h3 {
   width: 100%;
 }
 
-.home > img {
+.homeimage {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.homeimage > img {
   background: no-repeat center center/cover;
   height: auto;
   width: 100%;
   margin-bottom: 30px;
   opacity: .8;
 }
+
 
 /* Navbar */
 .burgerOn {
@@ -42,6 +48,7 @@ h3 {
   position: absolute;
   right: 16px;
   background: transparent;
+  z-index: 1;
 }
 
 .burgerOff {
@@ -56,6 +63,7 @@ h3 {
   right: 16px;
   background: transparent;
   transform: translateX(-100%);
+  z-index: 1;
   /* transition: width 2s, transform 1s;
   transition-timing-function: linear;
   transition-property: width; */
