@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTasks } from '@fortawesome/free-solid-svg-icons'
 
 
-class CardJs extends React.Component {
+
+class CardPM extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,11 +27,11 @@ class CardJs extends React.Component {
         flipSpeedBackToFront={3}
         flipSpeedFrontToBack={3}
         >
-            <div className="front js">
-              <FontAwesomeIcon icon={['fab', 'js']} size="10x" onClick={this.handleClick}/>
+            <div className="front pm">
+              <FontAwesomeIcon icon={faTasks} size="10x" onClick={this.handleClick}/>
             </div>
 
-            <div className="back js" onClick={this.handleClick}>Good understanding on Javascript. Mainly focus on React Js.
+            <div className="back pm" onClick={this.handleClick}>Certified Project Management Professional with 10+ years of hands-on PM experiences from functional process improvement to enterprise level system implementation.
             </div>        
         </ReactCardFlip>
 
@@ -39,4 +41,4 @@ class CardJs extends React.Component {
   }
 }
 
-export default CardJs;
+export default CardPM;

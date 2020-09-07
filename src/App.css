@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #eee;
 }
 
 
@@ -229,36 +228,58 @@ a:link, a:visited {
 		/* background: darken($primary, 10%);
 		color: $text; */
 		text-decoration: none;
-	}
+  }
   
-/* Skills */
-.back {
-  border: 1px solid gray;
-  border-radius: 3px;
-  width: 250px;
-}
-
-.skillcontainer {
+/* Card */
+.front, .back {
   display: flex;
-  justify-content: space-evenly;
+  height: 220px;
+  width: 220px;
+  margin: 20px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
 }
-.skillcard {
+
+.html {
+  color: #e34c26;
+}
+
+.css {
+  color: #264de4;
+}
+
+.js {
+  color: #f0db4f;
+}
+
+.react {
+  color: #61DBFB;
+}
+
+.pm {
+  color: #4F17aB;
+}
+  
+.business {
+  color: #5D9f98;
+}
+
+.language {
+  color: #4885ed;
+}
+
+.fitness {
+  color: red;
+}
+
+.travel {
+  color: #00043f;
+}
+
+.skillcard-container {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.skillset {
-  text-align: center;
-}
-
-.skillpage {
-  display: flex;  
-}
-
-.skillpage img {
-  width: 50%;
-  height: auto;
+  justify-content: center;
 }
 
 /* Project */

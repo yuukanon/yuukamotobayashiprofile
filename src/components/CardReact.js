@@ -22,14 +22,14 @@ class CardReact extends React.Component {
       <>
         <ReactCardFlip 
         isFlipped={this.state.isFlipped}
-        flipSpeedBackToFront={2}
-        flipSpeedFrontToBack={2}
+        flipSpeedBackToFront={3}
+        flipSpeedFrontToBack={3}
         >
             <div className="front react">
               <FontAwesomeIcon icon={['fab', 'react']} size="10x" onClick={this.handleClick}/>
             </div>
 
-            <div className="back react" onClick={this.handleClick}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, hic!
+            <div className="back react" onClick={this.handleClick}>Developed several websites with React, API, and React libraries.
             </div>        
         </ReactCardFlip>
 

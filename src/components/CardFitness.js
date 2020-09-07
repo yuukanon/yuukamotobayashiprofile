@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-class CardJs extends React.Component {
+class CardFitness extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,11 +26,11 @@ class CardJs extends React.Component {
         flipSpeedBackToFront={3}
         flipSpeedFrontToBack={3}
         >
-            <div className="front js">
-              <FontAwesomeIcon icon={['fab', 'js']} size="10x" onClick={this.handleClick}/>
+             <div className="front fitness">
+              <FontAwesomeIcon icon={faDumbbell} size="10x" onClick={this.handleClick}/>
             </div>
 
-            <div className="back js" onClick={this.handleClick}>Good understanding on Javascript. Mainly focus on React Js.
+            <div className="back fitness" onClick={this.handleClick}>Gym goer for at minimu 4 times a week. Enjoy weight lifting for last two years. 
             </div>        
         </ReactCardFlip>
 
@@ -39,4 +40,4 @@ class CardJs extends React.Component {
   }
 }
 
-export default CardJs;
+export default CardFitness;

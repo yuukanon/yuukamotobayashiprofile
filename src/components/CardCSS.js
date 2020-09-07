@@ -3,7 +3,7 @@ import ReactCardFlip from 'react-card-flip';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-class CardJs extends React.Component {
+class CardCSS extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,11 +25,11 @@ class CardJs extends React.Component {
         flipSpeedBackToFront={3}
         flipSpeedFrontToBack={3}
         >
-            <div className="front js">
-              <FontAwesomeIcon icon={['fab', 'js']} size="10x" onClick={this.handleClick}/>
+            <div className="front css">
+              <FontAwesomeIcon icon={['fab', 'css3-alt']} size="10x" onClick={this.handleClick}/>
             </div>
 
-            <div className="back js" onClick={this.handleClick}>Good understanding on Javascript. Mainly focus on React Js.
+            <div className="back css" onClick={this.handleClick}>Created several websites with HTML or React by applying CSS for better UI and UX on desktop and mobile experiences.
             </div>        
         </ReactCardFlip>
 
@@ -39,4 +39,4 @@ class CardJs extends React.Component {
   }
 }
 
-export default CardJs;
+export default CardCSS;
