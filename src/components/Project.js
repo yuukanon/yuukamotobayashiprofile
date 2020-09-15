@@ -12,19 +12,28 @@ const Project2 = () => {
           <div className="image-container">
             <img src={pic1} />
           </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, facilis!</p>
+          <p className="slide-box">
+              <h3>First Website</h3>
+              <p>This is the first website created as a course project from scratch with HTML, CSS, and Javascript.</p>
+          </p>
         </div>
         <div className="each-fade">
-          <div className="image-container">
-            <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80" />
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, facilis!</p>
-        </div>
-        <div className="each-fade">
-          <div className="image-container">
+        <div className="image-container">
             <img src={pic1} />
           </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, facilis!</p>
+          <p className="slide-box">
+              <h3>Weather App</h3>
+              <p>Used React API to call 5 day weather forecast based on a Searched city</p>
+          </p>
+        </div>
+        <div className="each-fade">
+        <div className="image-container">
+            <img src={pic1} />
+          </div>
+          <p className="slide-box">
+              <h3>Weather App</h3>
+              <p>Used React API to call 5 day weather forecast based on a Searched city</p>
+          </p>
         </div>
       </Fade>
     </div>

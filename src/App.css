@@ -10,7 +10,7 @@
 .main-body {
   width: 85%;
   margin: auto; 
-  margin-top: 50px; 
+  /* margin-top: 50px;  */
 }
 
 h3 {
@@ -39,65 +39,33 @@ h3 {
 
 
 /* Navbar */
-.burgerOn {
-  color: black;
-  padding: 0px 20px 5px 0px;
-  display: block;
-  justify-content: flex-end;
-  position: absolute;
-  right: 16px;
-  background: transparent;
-  z-index: 1;
-}
-
 .burgerOff {
   display: none;
 }
 
-.navOpen {
-  color: black;
-  display: block;
-  justify-content: flex-end;
-  position: absolute;
-  right: 16px;
-  background: transparent;
-  transform: translateX(-100%);
-  z-index: 1;
-  /* transition: width 2s, transform 1s;
-  transition-timing-function: linear;
-  transition-property: width; */
-
-  /* transition: transform .8s; */
+.top-navbar {
+  padding: 0px 20px 5px 0px;
 }
 
-ul {
+.top-navbar > ul {
   list-style-type: none;
   font-size: 20px;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-evenly;
 }
 
-li a {
-  padding: 10px 5px;
+.top-navbar a {
+  color: lightsalmon;
   text-decoration: none;
-  display: block;  
-  text-transform: uppercase;
-  transition: width 2s, transform 1s;
 }
 
-li:hover {
+.top-navbar > li:hover {
   border-bottom: solid 2px lightsalmon;
 }
 
-a:link, a:visited {
-  background-color: transparent;
-  color: black;
-}
-
-.navOff {
-  display: none;
-}
 
 /* About Me */
 .profile {
@@ -283,7 +251,7 @@ a:link, a:visited {
 }
 
 /* Project */
-.p1, .p2, .p3 {
+/* .p1, .p2, .p3 {
   display: flex;
   padding: 20px;
   justify-content: space-evenly;
@@ -295,14 +263,14 @@ a:link, a:visited {
 
 .p1 > p, .p2 > p, .p3 > p {
   padding: 15px;
-}
+} */
 
 .each-fade {
   display: flex;
   width: 100%;
 }
 
-.each-fade > div {
+.image-container {
   width: 75%;
 }
 
@@ -312,7 +280,7 @@ a:link, a:visited {
   object-fit: cover;
 }
 
-.each-fade p {
+/* .each-fade p {
   width: 25%;
   font-size: 1em;
   display: flex;
@@ -321,8 +289,27 @@ a:link, a:visited {
   align-items: center;
   margin: 0;
   background:lightsalmon;
+} */
+
+.slide-box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  font-size: 1em;
+  margin: 0;
+  background:lightsalmon;
 }
 
+.slide-box > h3 {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.slide-box > p {
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 10px;
+}
 
 
 /* Contact form */
@@ -411,5 +398,75 @@ input {
   /* Make all right containers behave like the left ones */
     .right {
       left: 0%;
+    }
+
+  /* Burger menu */
+    .top-navbar {
+      display: none;
+    }
+    .burgerOn {
+      color: olive;
+      padding: 0px 20px 5px 0px;
+      display: block;
+      justify-content: flex-end;
+      position: absolute;
+      right: 16px;
+      background: transparent;
+      z-index: 1;
+    }
+
+    .burgerOff {
+      display: none;
+    }
+
+    .navOpen {
+      color: olive;
+      display: block;
+      justify-content: flex-end;
+      position: absolute;
+      right: 10px;
+      background: transparent;
+      transform: translateX(-50%);
+      z-index: 1;
+      transition: ease-in-out;
+      /* transition: width 2s, transform 1s;
+      transition-timing-function: linear;
+      transition-property: width; */
+
+      /* transition: transform .8s; */
+    }
+
+    .navOpen > ul {
+      list-style-type: none;
+      font-size: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navOpen > li a {
+      padding: 10px 5px;
+      text-decoration: none;
+      display: block;  
+      text-transform: uppercase;
+    }
+
+    .navOpen a {
+      color: olive;
+      text-decoration: none;
+    }
+
+    .navOpen > li:hover {
+      border-bottom: solid 2px olive;
+    }
+
+    .navOpen > a:link, .navOpen > a:visited
+     {
+      background-color: transparent;
+      color: black;
+    }
+
+    .navOff {
+      display: none;
     }
   }
