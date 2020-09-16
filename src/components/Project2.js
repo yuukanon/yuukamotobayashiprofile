@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-const Project = () => {
+const OldProject = () => {
   return (
     <div className="project">
       <div className="p1">
@@ -33,4 +33,4 @@ const Project = () => {
   )
 }
 
-export default Project;
+export default OldProject;

@@ -4,7 +4,7 @@ import 'react-slideshow-image/dist/styles.css';
 import pic1 from './weather.png';
 
  
-const Project2 = () => {
+const Project = () => {
   return (
     <div className="slide-container">
       <Fade>
@@ -40,4 +40,4 @@ const Project2 = () => {
   )
 }
 
-export default Project2;
+export default Project;

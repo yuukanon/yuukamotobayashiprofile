@@ -5,8 +5,8 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Burger from './components/BurgerMenu';
 import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
-import Project from './components/Project2';
+import Skills2 from './components/Skills2';
+import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -26,7 +26,7 @@ function App() {
       <div className="main-body">
         <Route exact path='/' component={Home} />
         <Route path='/aboutme' component={AboutMe} />
-        <Route path='/skills' component={Skills} />
+        <Route path='/skills' component={Skills2} />
         <Route path='/projects' component={Project} />
         <Route path='/contact' component={Contact} />
         </div>

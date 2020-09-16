@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressCircle from './Progress'
+import ProgressCircle from '../components/Progress'
 
 const SkillCard = ({ programming, level, since, percentage}) => {
   return (
