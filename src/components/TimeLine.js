@@ -32,7 +32,6 @@ const TimeLine = () => {
               <div className="date">Certain, Inc., April 2020 to Present</div>
               <div className="location">Budapest, Hungary</div><br></br>
               <p className="timeline-p">Offering advice and expertise to clients to help drive better business performance and configuring a customized event platform for them while managing entire projects.</p>
-              <a className="btn-more">More</a>
           </div>
         </FadeInSection>    
       </div>
@@ -55,7 +54,6 @@ const TimeLine = () => {
               <div className="date">National Instrumets, January 2015 to March 2020</div>
               <div className="location">Austin, TX USA and Budapest, Hungary</div><br></br>
               <p className="timeline-p">In charge of translating our business and company’s strategy vision into operational processes and system integration requirements. Led technology integration and established effective business systems processes. </p>
-              <a className="btn-more">More</a>
             </div>
             </FadeInSection> 
           </div>
@@ -67,7 +65,6 @@ const TimeLine = () => {
               <div className="date">National Instrumets, March 2011 to December 2014</div>
               <div className="location">Austin, TX USA</div><br></br>
               <p className="timeline-p">Utilized marketing data to provide stakeholders with increased visibility into business drivers and provided Asia Pacific insights and applied variances to streamline campaign executions while aligning content with company strategy.</p>
-              <a className="btn-more">More</a>
             </div>
             </FadeInSection>    
         </div>
