@@ -14,16 +14,11 @@
   /* margin-top: 50px;  */
 }
 
-h2 {
-  font-size: 40px;
-}
-
-
 /* Home */
 
 .home {
   width: 100%;
-  color: #99A89E;
+  color: #807F89;
 }
 
 .homeimage {
@@ -39,6 +34,12 @@ h2 {
   opacity: .8;
 }
 
+.name {
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Navbar */
 
