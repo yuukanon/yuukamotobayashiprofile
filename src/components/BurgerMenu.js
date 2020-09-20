@@ -16,12 +16,12 @@ function Burger () {
     <>
       <div className={open ? 'burgerOff' : 'burgerOn'} onClick={navOpen}>
         <FontAwesomeIcon 
-          icon={faBars} size='3x' />
+          icon={faBars} size='2x' />
       </div>
       <div className={open ? 'navOpen' : 'navOff'} onClick={burger}>
         <ul>
         <FontAwesomeIcon 
-          icon={faTimes} size='3x' />
+          icon={faTimes} size='2x' />
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/aboutme'>About Me</Link></li>
           <li><Link to='/skills'>Skills</Link></li>

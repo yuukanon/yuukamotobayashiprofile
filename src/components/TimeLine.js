@@ -42,7 +42,6 @@ const TimeLine = () => {
             <h4 className="timelineh4">Front End Web Developer Course</h4>
               <div className="date">Wild Code School, April 2020 to October 2020</div><br></br>
               <p className="timeline-p">Acquired HTML, CSS, Javascript, and React in less than 5 months. Developed several web pages including a global telecom company for its mainstream product from sctrach. </p>
-              <a className="btn-more">More</a>
             </div>
             </FadeInSection>    
         </div>
@@ -74,7 +73,7 @@ const TimeLine = () => {
             <div className="timelinecontent">
             <h4 className="timelineh4">Master of Business Administration</h4>
               <div className="date">Babson F.W. Olin Graduate School of Business, August 2008 to May 2010</div>
-              <div className="location">Wellsley, MA USA</div><br></br>
+              <div className="location">Wellsley, MA USA</div>
             </div>
             </FadeInSection> 
         </div>
@@ -84,7 +83,7 @@ const TimeLine = () => {
             <div className="timelinecontent">
             <h4 className="timelineh4">Bachelor of Science, Marketing</h4>
               <div className="date">University of Denver, August 2001 to December 2013</div>
-              <div className="location">Denver, CO USA</div><br></br>
+              <div className="location">Denver, CO USA</div>
             </div>
             </FadeInSection>    
         </div>

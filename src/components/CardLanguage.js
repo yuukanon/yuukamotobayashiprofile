@@ -24,8 +24,8 @@ class CardLanguage extends React.Component {
       <>
         <ReactCardFlip 
         isFlipped={this.state.isFlipped}
-        flipSpeedBackToFront={3}
-        flipSpeedFrontToBack={3}
+        flipSpeedBackToFront={2}
+        flipSpeedFrontToBack={2}
         >
             <div className="front language">
               <FontAwesomeIcon icon={faLanguage} size="10x" onClick={this.handleClick}/>

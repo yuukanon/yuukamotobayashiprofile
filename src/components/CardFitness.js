@@ -23,8 +23,8 @@ class CardFitness extends React.Component {
       <>
         <ReactCardFlip 
         isFlipped={this.state.isFlipped}
-        flipSpeedBackToFront={3}
-        flipSpeedFrontToBack={3}
+        flipSpeedBackToFront={2}
+        flipSpeedFrontToBack={2}
         >
              <div className="front fitness">
               <FontAwesomeIcon icon={faDumbbell} size="10x" onClick={this.handleClick}/>
