@@ -16,19 +16,16 @@ const FlipCard = () => {
       <div className="skillcard 1">
         <CardHTML />
         <CardReact />
-        <CardLanguage />
       </div>
     
       <div className="skillcard 2">
         <CardCSS />
         <CardPM />
-        <CardFitness />
       </div>
 
       <div className="skillcard 3">
         <CardJs />
-        <CardBusiness />
-        <CardTravel />
+        <CardLanguage />
       </div>
     </div>
   )

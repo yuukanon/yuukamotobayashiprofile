@@ -21,7 +21,7 @@ function Burger () {
       <div className={open ? 'navOpen' : 'navOff'} onClick={burger}>
         <ul>
         <FontAwesomeIcon 
-          icon={faTimes} size='2x' />
+          icon={faTimes} size='2x' className="x" />
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/aboutme'>About Me</Link></li>
           <li><Link to='/skills'>Skills</Link></li>

@@ -31,7 +31,12 @@ class CardLanguage extends React.Component {
               <FontAwesomeIcon icon={faLanguage} size="10x" onClick={this.handleClick}/>
             </div>
 
-            <div className="back language" onClick={this.handleClick}>Japanese - Native, English - Peofessional Proficiency.
+            <div className="back language" onClick={this.handleClick}>
+              <ul>
+                <li>Japanese - Native</li>
+                <li>English - Peofessional Proficiency</li>
+              </ul>
+              
             </div>        
         </ReactCardFlip>
 

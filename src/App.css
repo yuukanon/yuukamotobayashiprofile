@@ -225,20 +225,12 @@
   color: #4F17aB;
 }
   
-.business {
-  color: #5D9f98;
-}
-
 .language {
   color: #4885ed;
 }
 
-.fitness {
-  color: red;
-}
-
-.travel {
-  color: #00043f;
+.language > ul {
+  list-style: none;
 }
 
 .skillcard-container {
@@ -327,8 +319,10 @@ input {
 
 .icon{
   display: flex;
-  margin: 20px;
+  margin-top: 20px;
+  padding: 20px;
   justify-content: center;
+  background-color: #D7DBD1;
 }
 
 .icon a {
@@ -344,8 +338,7 @@ input {
 @media screen and (max-width: 600px) {
   
   .main-body {
-    width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   /* Home */
@@ -369,6 +362,9 @@ input {
   }
 
   /* About Me */
+  .aboutMe {
+    width: 100%;
+  }
   .profile {
     margin-top: 20px
   }
@@ -393,15 +389,17 @@ input {
   
   /* Full-width containers */
     .container {
-      width: 100%;
+      width: 80%;
       padding-left: 70px;
       padding-right: 25px;
     }
   
   /* Make sure that all arrows are pointing leftwards */
     .timeline {
-      margin-bottom: 30px;
-    }
+      padding: 10px 0;
+      margin: 20px auto;
+      }
+
     .container::before {
       left: 60px;
       border: medium solid white;
@@ -421,7 +419,7 @@ input {
 
     .timelinecontent {
       padding: 10px 10px;
-      width: 200px;
+      width: 150%;
     }
 
   /* Burger menu */
@@ -437,6 +435,7 @@ input {
       right: 16px;
       background: transparent;
       z-index: 1;
+      margin-top: -18px;
     }
 
     .burgerOff {
@@ -445,14 +444,13 @@ input {
 
     .navOpen {
       color: olive;
-      display: block;
-      justify-content: flex-end;
+      display: inline;
       position: absolute;
       right: -15px;
-      background: transparent;
-      transform: translateX(-50%);
+      transform: translateX(-33%);
       z-index: 1;
       transition: ease-in-out;
+      margin: -10px;
     }
 
     .navOpen > ul {
@@ -461,6 +459,12 @@ input {
       height: 100%;
       display: flex;
       flex-direction: column;
+    }
+
+    .navOpen > ul > li {
+      background-color: #ECA4A6;
+      padding-left: 10px;      
+      padding-right: 10px;
     }
 
     .navOpen > li a {
@@ -489,13 +493,23 @@ input {
       display: none;
     }
 
+  /* Skills */
+    .skillcard-container {
+      flex-direction: column;
+      align-items: center;
+    }
   /* Project */
+    .each-fade, .image-container,.slide-box {
+      display: none;
+    }
 
     .media-each-fade {
       display: flex;
-      width: 100%;
+      flex-direction: column;
+      align-items: center;
     }
 
+    
     .media-image-container {
       width: 75%;
     }
@@ -507,29 +521,44 @@ input {
     }
 
     .media-slide-box {
-      display: flex;
-      flex-direction: row;
-      width: 25%;
-      font-size: 1em;
+      width: 100%;
       margin: 0;
       background:#ECA4A6;
     }
 
     .media-slide-box > h3 {
-      margin-top: 25px;
+      margin-top: 10px;
       text-align: center;
+      font-size: 12px;
     }
 
     .media-slide-box > p {
-      text-align: left;
-      margin-top: 25px;
-      margin-left: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+
+  /* Contact */
+    .contact-container {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+
+    input, .contact-project {
+      width: 350px;
+      font-size: 15px;
+    }
+
+    .submit {
+      font-size: 15px;
     }
 
   /* Footer */
     .icon{
       display: flex;
-      margin: 0px;
+      margin: 10px 0px 0px 0px;
+      padding: 10px;
       justify-content: center;
     }
 

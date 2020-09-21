@@ -7,6 +7,7 @@ import Burger from './components/BurgerMenu';
 import AboutMe from './components/AboutMe';
 import Skills2 from './components/Skills2';
 import Project from './components/Project';
+import MediaProject from './components/MediaProject';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -28,6 +29,7 @@ function App() {
         <Route path='/aboutme' component={AboutMe} />
         <Route path='/skills' component={Skills2} />
         <Route path='/projects' component={Project} />
+        <Route path='/projects' component={MediaProject} />
         <Route path='/contact' component={Contact} />
         </div>
       </Switch>

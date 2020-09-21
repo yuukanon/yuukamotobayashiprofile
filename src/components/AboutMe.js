@@ -5,7 +5,7 @@ import TimeLine from './TimeLine';
 const AboutMe = () => {
 
   return(
-    <>
+    <div className="aboutMe">
       <div className="profile">
         <div className="profilecontent">
           <h3>Not Just a Front End Web Developer but also </h3>
@@ -28,7 +28,7 @@ const AboutMe = () => {
       
        <TimeLine />
       
-    </>
+    </div>
 
   )
 }
