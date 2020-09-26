@@ -19,7 +19,7 @@ const Project = () => {
           <p className="slide-box">
               <h3>First Website</h3>
               <p>The first website created as a course project from scratch with HTML, CSS, and Javascript.</p>
-              <button><a href="http://">Check it in GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
+              <button><a href="https://github.com/yuukanon/homeexpert">Check it in GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
           </p>
           
         </div>
@@ -30,6 +30,7 @@ const Project = () => {
           <p className="slide-box">
               <h3>Weather App</h3>
               <p>Used React API to call 5 day weather forecast based on a Searched city.</p>
+              <button><a href="https://github.com/yuukanon/weatherapp">Check it in GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
           </p>
         </div>
         <div className="each-fade">
@@ -39,6 +40,7 @@ const Project = () => {
           <p className="slide-box">
               <h3>Hackathon</h3>
               <p>Developed a product landing page for Nokia Featured Phone less than 24 hours.</p>
+              <button><a href="https://github.com/yuukanon/homeexpert">Check it in GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
           </p>
         </div>
       </Fade>
