@@ -1,8 +1,9 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import pic1 from './weather.png';
-import pic3 from './Nokia.png';
+import pic1 from './expert.png';
+import pic2 from './weather.png';
+import pic3 from './nokia.png';
 
 
  
@@ -21,7 +22,7 @@ const Project = () => {
         </div>
         <div className="each-fade">
         <div className="image-container">
-            <img src={pic1} />
+            <img src={pic2} />
           </div>
           <p className="slide-box">
               <h3>Weather App</h3>

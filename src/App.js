@@ -29,7 +29,7 @@ function App() {
         <Route path='/aboutme' component={AboutMe} />
         <Route path='/skills' component={Skills2} />
         <Route path='/projects' component={Project} />
-        <Route path='/projects' component={MediaProject} />
+        {/* <Route path='/projects' component={MediaProject} /> */}
         <Route path='/contact' component={Contact} />
         </div>
       </Switch>
