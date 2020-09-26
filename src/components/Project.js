@@ -2,8 +2,9 @@ import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import pic1 from './expert.png';
-import pic2 from './weather.png';
+import pic2 from './austinweather.png';
 import pic3 from './nokia.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
  
@@ -18,7 +19,9 @@ const Project = () => {
           <p className="slide-box">
               <h3>First Website</h3>
               <p>The first website created as a course project from scratch with HTML, CSS, and Javascript.</p>
+              <button><a href="http://">Check it in GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
           </p>
+          
         </div>
         <div className="each-fade">
         <div className="image-container">

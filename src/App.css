@@ -280,6 +280,28 @@
   margin-left: 10px;
 }
 
+.slide-box button {
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 25%;
+  border-style: hidden;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slide-box button > a {
+  text-decoration: none;
+}
+
+.slide-box button > a:link {
+  color: white;
+}
+
+.slide-box button:hover {
+  background: #ECA4A6;
+  color: white;
+}
 
 /* Contact form */
 .form-field {
