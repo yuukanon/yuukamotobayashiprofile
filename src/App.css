@@ -248,10 +248,14 @@
   display: flex;
   width: 100%;
 
+
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .image-container {
-  width: 75%;
+  width: 100%;
 }
 
 .each-fade > div img {
@@ -301,6 +305,15 @@
 .slide-box button:hover {
   background: #ECA4A6;
   color: white;
+}
+
+.project-text {
+  position: absolute;
+  top: 25%;
+  left: 16px;
+  width: 30%;
+  background-color: #ECA4A6;
+  opacity: 0.7;
 }
 
 /* Contact form */
@@ -560,6 +573,26 @@ input {
       text-align: center;
       margin-bottom: 10px;
       font-size: 10px;
+    }
+
+    .project-text > h3 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .project-text > p {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+
+    .project-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40%;
+      height:45%;
     }
 
   /* Contact */
