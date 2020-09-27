@@ -247,8 +247,6 @@
 .each-fade {
   display: flex;
   width: 100%;
-
-
   position: relative;
   text-align: center;
   color: white;
@@ -263,7 +261,7 @@
   height: 100%;
   object-fit: cover;
 }
-
+/* 
 .slide-box {
   display: flex;
   flex-direction: column;
@@ -279,11 +277,11 @@
 }
 
 .slide-box > p {
-  text-align: left;
+  text-align: center;
   margin-top: 25px;
   margin-left: 10px;
-}
-
+} */
+/* 
 .slide-box button {
   width: 50%;
   text-align: center;
@@ -305,15 +303,38 @@
 .slide-box button:hover {
   background: #ECA4A6;
   color: white;
-}
+} */
 
 .project-text {
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 16px;
   width: 30%;
   background-color: #ECA4A6;
   opacity: 0.7;
+  padding: 10px;
+}
+
+.project-text button {
+  text-align: center;
+  border-style: hidden;
+  background: transparent;
+  cursor: pointer;
+}
+
+.project-text button > a {
+  text-decoration: none;
+  color: #807F89;
+
+}
+
+.project-text button > a:link {
+  color: white;
+}
+
+.project-text button:hover {
+  background: #ECA4A6;
+  color: white;
 }
 
 /* Contact form */
@@ -557,7 +578,7 @@ input {
       height: 100%;
       object-fit: cover;
     }
-
+/* 
     .slide-box {
       width: 100%;
       background:#ECA4A6;
@@ -573,26 +594,23 @@ input {
       text-align: center;
       margin-bottom: 10px;
       font-size: 10px;
-    }
+    } */
 
     .project-text > h3 {
-      margin-top: 10px;
-      text-align: center;
+      margin-top: 8px;
       font-size: 12px;
     }
 
-    .project-text > p {
-      text-align: center;
-      margin-bottom: 10px;
+    .project-text > p, .project-text > button {
       font-size: 10px;
     }
 
     .project-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 40%;
-      height:45%;
+      top: 20%;
+      left: 60%;
+      width: 35%;
+      height:35%;
+      padding: 2px;
     }
 
   /* Contact */
