@@ -54,7 +54,7 @@ const Project = () => {
           <div className="project-text">
             <h3>Hackathon</h3>
             <p>Developed a product landing page for Nokia Featured Phone in 24 hours.</p>
-            <button><a href="https://github.com/yuukanon/homeexpert">Check it on GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
+            <button><a href="https://github.com/nokia-hackathon-group4/new-nokia-winner">Check it on GitHub  <FontAwesomeIcon icon={['fab', 'github']} size="lg" /></a></button>
           </div>
         </div>
       </Fade>
