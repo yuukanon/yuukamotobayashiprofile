@@ -18,7 +18,7 @@
 
 .home {
   width: 100%;
-  color: #807F89;
+  color: #f9d5d3;
 }
 
 .homeimage {
@@ -36,7 +36,7 @@
 
 .name {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -62,11 +62,11 @@
 }
 
 .top-navbar a {
-  color: #ECA4A6;
+  color: #99A89E;
   text-decoration: none;
 }
 
-.top-navbar > li:hover {
+li:hover {
   border-bottom: solid 2px #ECA4A6;
 }
 
@@ -91,7 +91,13 @@
 
 .profilecontent > li {
   font-size: 19px;
+  margin-bottom: 12px;
 }
+
+.profilecontent > h3 {
+  margin-bottom: 15px;
+}
+
 
 /* Timeline */
 .fade-in-section {
@@ -391,10 +397,42 @@ input {
   padding: 20px;
 }
 
+/* Media queries - Responsive on tablet screens */
+
+@media only screen and (min-width: 768px) {
+  /* Home */
+  .name {
+    width: 500px;
+    position: absolute;
+    top: 28%;
+    left: 58%;
+  }
+  .name > h3 {
+    font-size: 14px;
+  }
+
+  .name > h1 {
+    font-size: 20px;
+  }
+
+/* About Me */
+
+  .profilecontent > h3, .timelineh4 {
+    font-size: 16px;
+  }
+
+  .profilecontent > li, .date, .location, .timeline-p {
+    font-size: 14px;
+  }
+
+  .timeline {
+    margin: 20px 0px 15px 0px;
+  }
+
+}
 
 
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* Media queries - Responsive on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
   
@@ -406,16 +444,15 @@ input {
   .name {
     width: 300px;
     position: absolute;
-    top: 22%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
+    top: 19%;
+    left: 63%;
   }
   .name > h3 {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .name > h1 {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .homeimage > img {
@@ -489,7 +526,7 @@ input {
       display: none;
     }
     .burgerOn {
-      color: #807F89;
+      color: #D7DBD1;
       display: block;
       justify-content: flex-end;
       position: absolute;
@@ -504,26 +541,23 @@ input {
     }
 
     .navOpen {
-      color: olive;
+      color:#D7DBD1;
       display: inline;
       position: absolute;
       right: -15px;
       transform: translateX(-33%);
       z-index: 1;
-      transition: ease-in-out;
       margin: -10px;
     }
-
     .navOpen > ul {
       list-style-type: none;
-      font-size: 15px;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
 
     .navOpen > ul > li {
-      background-color: #ECA4A6;
+      background-color: #d7dbd1;
       padding-left: 10px;      
       padding-right: 10px;
     }
@@ -532,22 +566,15 @@ input {
       padding: 10px 5px;
       text-decoration: none;
       display: block;  
-      text-transform: uppercase;
     }
 
     .navOpen a {
-      color: olive;
+      color:#eca4a6;
       text-decoration: none;
     }
 
     .navOpen > li:hover {
       border-bottom: solid 2px olive;
-    }
-
-    .navOpen > a:link, .navOpen > a:visited
-     {
-      background-color: transparent;
-      color: black;
     }
 
     .navOff {
