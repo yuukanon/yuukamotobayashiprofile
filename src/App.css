@@ -76,7 +76,6 @@ li:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 20px;
   background-color: #D7DBD1;
   max-width: 100%;
   padding:20px;
@@ -84,18 +83,18 @@ li:hover {
 }
 .profile img {
   width: 30%;
-  height: 30%;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-left: 30px;
 }
 
 .profilecontent > li {
-  font-size: 19px;
   margin-bottom: 12px;
+  font-size: 18px;
 }
 
 .profilecontent > h3 {
   margin-bottom: 15px;
+  font-size: 24px;
 }
 
 
@@ -399,7 +398,7 @@ input {
 
 /* Media queries - Responsive on tablet screens */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
   /* Home */
   .name {
     width: 500px;
@@ -429,6 +428,9 @@ input {
     margin: 20px 0px 15px 0px;
   }
 
+  .profilecontent > h3, .profilecontent > li {
+    margin-bottom: 5px;
+  }
 }
 
 
