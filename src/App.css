@@ -62,7 +62,7 @@
 }
 
 .top-navbar a {
-  color: #99A89E;
+  color: #99a89e;
   text-decoration: none;
 }
 
@@ -312,9 +312,8 @@ li:hover {
 
 .project-text {
   position: absolute;
-  top: 20%;
-  left: 16px;
-  width: 30%;
+  bottom: 8px;
+  width: 100%;
   background-color: #ECA4A6;
   opacity: 0.7;
   padding: 10px;
@@ -330,7 +329,6 @@ li:hover {
 .project-text button > a {
   text-decoration: none;
   color: #807F89;
-
 }
 
 .project-text button > a:link {
@@ -345,6 +343,10 @@ li:hover {
 /* Contact form */
 .form-field {
   margin-top: 20px;
+}
+
+.contact-container > h3 {
+  color: #807f89;
 }
 
 input {
@@ -368,10 +370,11 @@ input {
 .submit {
   border-style: hidden;
   width: 100px;
-  font-size: 25px;
+  font-size: 22px;
   background: transparent;
   margin-top: 20px;
   cursor: pointer;
+  color: #807F89;
 }
 
 .submit:hover {
@@ -459,11 +462,13 @@ input {
 
   .homeimage > img {
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   /* About Me */
   .aboutMe {
     width: 100%;
+    padding-top: 10px;
   }
   .profile {
     margin-top: 20px
@@ -548,7 +553,7 @@ input {
       position: absolute;
       right: -15px;
       transform: translateX(-33%);
-      z-index: 1;
+      z-index: 2;
       margin: -10px;
     }
     .navOpen > ul {
@@ -559,9 +564,11 @@ input {
     }
 
     .navOpen > ul > li {
-      background-color: #d7dbd1;
       padding-left: 10px;      
       padding-right: 10px;
+      background-color:white;
+      opacity: 0.9;
+
     }
 
     .navOpen > li a {
@@ -573,10 +580,6 @@ input {
     .navOpen a {
       color:#eca4a6;
       text-decoration: none;
-    }
-
-    .navOpen > li:hover {
-      border-bottom: solid 2px olive;
     }
 
     .navOff {
@@ -607,6 +610,7 @@ input {
       height: 100%;
       object-fit: cover;
     }
+
 /* 
     .slide-box {
       width: 100%;
@@ -626,7 +630,6 @@ input {
     } */
 
     .project-text > h3 {
-      margin-top: 8px;
       font-size: 12px;
     }
 
@@ -635,27 +638,25 @@ input {
     }
 
     .project-text {
-      top: 20%;
-      left: 60%;
-      width: 35%;
-      height:35%;
-      padding: 2px;
+      padding: 5px;
     }
 
   /* Contact */
     .contact-container {
-      padding: 10px;
+      padding-top: 30px;
       font-size: 15px;
     }
 
 
     input, .contact-project {
-      width: 350px;
+      width: 300px;
       font-size: 15px;
     }
 
     .submit {
       font-size: 15px;
+      margin-top: 10px;
+      width: 80px;
     }
 
   /* Footer */
