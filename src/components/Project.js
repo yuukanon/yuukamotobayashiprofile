@@ -3,7 +3,7 @@ import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import pic1 from './expert.png';
 import pic2 from './austinweather.png';
-import pic3 from './nokia.png';
+import pic3 from './Nokia.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
