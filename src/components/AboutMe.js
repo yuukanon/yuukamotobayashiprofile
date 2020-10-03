@@ -13,12 +13,14 @@ const AboutMe = () => {
               Results-oriented Front End Web Developer dedicated to creating interactive, user-friendly, and feature-rich websites. 
           </li>
           <li>
-             Building new websites from start to finish by gathering clients' business requirements and providing technical knowledge and expertise. 
+            Building new websites from start to finish by gathering clients' business requirements and providing technical knowledge and expertise. 
           </li>
 
           <li>
             Proven organizational and business skills with 10+ years of managing functional to enterprise level project experiences.
-          </li>
+          </li>           
+
+  
           
           
         </div>

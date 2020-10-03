@@ -87,9 +87,11 @@ li:hover {
   margin-left: 30px;
 }
 
+
 .profilecontent > li {
   margin-bottom: 12px;
   font-size: 18px;
+  border: none;
 }
 
 .profilecontent > h3 {
@@ -199,7 +201,67 @@ li:hover {
 }
   
 /* Card */
+.fadeout{
+  color: #ECA4A6;
+  text-align: center;
+  background-color: #807F89;
+  padding: 10px;
+  width: 40%;
+  position: absolute;
+  left: 31%;
+  top: 35%;
+  opacity: 0;
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
 
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
 
 .front, .back {
   display: flex;
@@ -266,49 +328,6 @@ li:hover {
   height: 100%;
   object-fit: cover;
 }
-/* 
-.slide-box {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  font-size: 1em;
-  margin: 0;
-  background:#ECA4A6;
-}
-
-.slide-box > h3 {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.slide-box > p {
-  text-align: center;
-  margin-top: 25px;
-  margin-left: 10px;
-} */
-/* 
-.slide-box button {
-  width: 50%;
-  text-align: center;
-  margin-top: 30px;
-  margin-left: 25%;
-  border-style: hidden;
-  background: transparent;
-  cursor: pointer;
-}
-
-.slide-box button > a {
-  text-decoration: none;
-}
-
-.slide-box button > a:link {
-  color: white;
-}
-
-.slide-box button:hover {
-  background: #ECA4A6;
-  color: white;
-} */
 
 .project-text {
   position: absolute;
@@ -434,6 +453,13 @@ input {
   .profilecontent > h3, .profilecontent > li {
     margin-bottom: 5px;
   }
+
+  /* Card */
+    .fadeout {
+      width: 60%;
+      top: 25%;
+      left: 22%;      
+    }
 }
 
 
@@ -568,12 +594,10 @@ input {
       padding-right: 10px;
       background-color:white;
       opacity: 0.9;
-
+      font-size: 14px;
     }
 
     .navOpen > li a {
-      padding: 10px 5px;
-      text-decoration: none;
       display: block;  
     }
 
@@ -587,6 +611,16 @@ input {
     }
 
   /* Skills */
+    .fadeout {
+      width: 90%;
+      top: 28%;
+      left: 5%;      
+    }
+
+    .fadeout > h2 {
+      font-size: 19px;
+    }
+
     .skillcard-container {
       flex-direction: column;
       align-items: center;
@@ -611,35 +645,20 @@ input {
       object-fit: cover;
     }
 
-/* 
-    .slide-box {
-      width: 100%;
-      background:#ECA4A6;
+    .project-text {
+      height: 60px;
+      padding-top: 2px;
     }
-
-    .slide-box > h3 {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 12px;
-    }
-
-    .slide-box > p {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 10px;
-    } */
 
     .project-text > h3 {
       font-size: 12px;
     }
 
     .project-text > p, .project-text > button {
-      font-size: 10px;
+      font-size: 8px;
     }
 
-    .project-text {
-      padding: 5px;
-    }
+
 
   /* Contact */
     .contact-container {
