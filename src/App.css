@@ -1,20 +1,690 @@
 * {
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Poppins', sans-serif;  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  ;
 }
+
+
+.main-body {
+  width: 85%;
+  margin: auto; 
+  /* margin-top: 50px;  */
+}
+
+/* Home */
+
+.home {
+  width: 100%;
+  color: #f9d5d3;
+}
+
+.homeimage {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.homeimage > img {
+  background: no-repeat center center/cover;
+  height: auto;
+  width: 100%;
+  margin-bottom: 30px;
+  opacity: .8;
+}
+
+.name {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navbar */
+
+.navOff, .burgerOn {
+  display: none;
+}
+
+.top-navbar {
+  padding: 10px 10px 10px 0px;
+}
+
+.top-navbar > ul {
+  list-style-type: none;
+  font-size: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: space-evenly;
+}
+
+.top-navbar a {
+  color: #99a89e;
+  text-decoration: none;
+}
+
+li:hover {
+  border-bottom: solid 2px #ECA4A6;
+}
+
 
 /* About Me */
 .profile {
   display: flex;
   justify-content: space-evenly;
-  font-size: 25px;
-  width: 80%;
-  margin: auto;
+  align-items: center;
+  background-color: #D7DBD1;
+  max-width: 100%;
+  padding:20px;
+  color: #807F89;
 }
 .profile img {
-  width: 50%;
+  width: 30%;
   border-radius: 10px;
-  height: auto;
+  margin-left: 30px;
 }
 
+
+.profilecontent > li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  border: none;
+}
+
+.profilecontent > h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+
+/* Timeline */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.timeline {
+  padding: 100px 0;
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #807F89;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  color: #807F89;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ECA4A6;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #ECA4A6;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ECA4A6;
+}  
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #ECA4A6;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ECA4A6 transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.timelinecontent {
+  padding: 20px 10px;
+  border:#ECA4A6 solid 2px;
+  position: relative;
+  border-radius: 6px;
+}
+  
+/* Card */
+.fadeout{
+  color: #ECA4A6;
+  text-align: center;
+  background-color: #807F89;
+  padding: 10px;
+  width: 40%;
+  position: absolute;
+  left: 31%;
+  top: 35%;
+  opacity: 0;
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+}
+
+.front, .back {
+  display: flex;
+  height: 220px;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.html {
+  color: #e34c26;
+}
+
+.css {
+  color: #264de4;
+}
+
+.js {
+  color: #f0db4f;
+}
+
+.react {
+  color: #61DBFB;
+}
+
+.pm {
+  color: #4F17aB;
+}
+  
+.language {
+  color: #4885ed;
+}
+
+.language > ul {
+  list-style: none;
+}
+
+.skillcard-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Project */
+
+.mediasize {
+  display: none;
+}
+
+.each-fade {
+  display: flex;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.each-fade > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-text {
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  background-color: #ECA4A6;
+  opacity: 0.7;
+  padding: 10px;
+}
+
+.project-text button {
+  text-align: center;
+  border-style: hidden;
+  background: transparent;
+  cursor: pointer;
+}
+
+.project-text button > a {
+  text-decoration: none;
+  color: #807F89;
+}
+
+.project-text button > a:link {
+  color: white;
+}
+
+.project-text button:hover {
+  background: #ECA4A6;
+  color: white;
+}
+
+/* Contact form */
+.form-field {
+  margin-top: 20px;
+}
+
+.contact-container > h3 {
+  color: #807f89;
+}
+
+input {
+  border-style: hidden;
+  border-bottom: solid #ECA4A6;
+  width: 640px;
+  font-size: 20px;
+  outline: none;
+}
+
+.contact-project {
+  border-style: hidden;
+  border-bottom: solid #ECA4A6;
+  width: 640px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  outline: none;
+}
+
+.submit {
+  border-style: hidden;
+  width: 100px;
+  font-size: 22px;
+  background: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #807F89;
+}
+
+.submit:hover {
+  background: #ECA4A6;
+  color: white;
+}
+
+
+
+/* Footer */
+
+.icon{
+  display: flex;
+  margin-top: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #D7DBD1;
+}
+
+.icon a {
+  color: #ECA4A6;
+  padding: 20px;
+}
+
+/* Media queries - Responsive on tablet screens */
+
+@media only screen and (min-width: 768px) and (max-device-width : 1024px) {
+  /* Home */
+  .name {
+    width: 500px;
+    position: absolute;
+    top: 28%;
+    left: 58%;
+  }
+  .name > h3 {
+    font-size: 14px;
+  }
+
+  .name > h1 {
+    font-size: 20px;
+  }
+
+/* About Me */
+
+  .profilecontent > h3, .timelineh4 {
+    font-size: 16px;
+  }
+
+  .profilecontent > li, .date, .location, .timeline-p {
+    font-size: 14px;
+  }
+
+  .timeline {
+    margin: 20px 0px 15px 0px;
+  }
+
+  .profilecontent > h3, .profilecontent > li {
+    margin-bottom: 5px;
+  }
+
+  /* Card */
+    .fadeout {
+      width: 60%;
+      top: 25%;
+      left: 22%;      
+    }
+}
+
+
+/* Media queries - Responsive on screens less than 600px wide */
+
+@media screen and (max-width: 600px) {
+  
+  .main-body {
+    margin-top: 30px;
+  }
+
+  /* Home */
+  .name {
+    width: 300px;
+    position: absolute;
+    top: 19%;
+    left: 63%;
+  }
+  .name > h3 {
+    font-size: 8px;
+  }
+
+  .name > h1 {
+    font-size: 12px;
+  }
+
+  .homeimage > img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* About Me */
+  .aboutMe {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .profile {
+    margin-top: 20px
+  }
+
+  .profilecontent > h3, .timelineh4 {
+    font-size: 15px;
+  }
+
+  .profilecontent > li, .date, .location, .timeline-p {
+    font-size: 13px;
+  }
+
+  .profile > img {
+    display: none;
+  }
+
+  /* Timeline */
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 80%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .timeline {
+      padding: 10px 0;
+      margin: 20px auto;
+      }
+
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+
+    .timelinecontent {
+      padding: 10px 10px;
+      width: 150%;
+    }
+
+  /* Burger menu */
+    
+    .top-navbar {
+      display: none;
+    }
+    .burgerOn {
+      color: #D7DBD1;
+      display: block;
+      justify-content: flex-end;
+      position: absolute;
+      right: 16px;
+      background: transparent;
+      z-index: 1;
+      margin-top: -18px;
+    }
+
+    .burgerOff {
+      display: none;
+    }
+
+    .navOpen {
+      color:#D7DBD1;
+      display: inline;
+      position: absolute;
+      right: -15px;
+      transform: translateX(-33%);
+      z-index: 2;
+      margin: -10px;
+    }
+    .navOpen > ul {
+      list-style-type: none;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navOpen > ul > li {
+      padding-left: 10px;      
+      padding-right: 10px;
+      background-color:white;
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .navOpen > li a {
+      display: block;  
+    }
+
+    .navOpen a {
+      color:#eca4a6;
+      text-decoration: none;
+      border: none;
+    }
+
+    .navOff {
+      display: none;
+    }
+
+  /* Skills */
+    .fadeout {
+      width: 90%;
+      top: 28%;
+      left: 5%;      
+    }
+
+    .fadeout > h2 {
+      font-size: 19px;
+    }
+
+    .skillcard-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  /* Project */
+
+    .each-fade {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+    .image-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .each-fade > div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project-text {
+      height: 60px;
+      padding-top: 2px;
+    }
+
+    .project-text > h3 {
+      font-size: 12px;
+    }
+
+    .project-text > p, .project-text > button {
+      font-size: 8px;
+    }
+
+
+
+  /* Contact */
+    .contact-container {
+      padding-top: 30px;
+      font-size: 15px;
+    }
+
+
+    input, .contact-project {
+      width: 300px;
+      font-size: 15px;
+    }
+
+    .submit {
+      font-size: 15px;
+      margin-top: 10px;
+      width: 80px;
+    }
+
+  /* Footer */
+    .icon{
+      display: flex;
+      margin: 10px 0px 0px 0px;
+      padding: 10px;
+      justify-content: center;
+    }
+
+  }

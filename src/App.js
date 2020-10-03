@@ -1,43 +1,40 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Burger from './components/BurgerMenu';
 import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
+import Skills2 from './components/Skills2';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+
+library.add(fab, faEnvelope)
 
 function App() {
+
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/aboutme' component={AboutMe} />
-          <Route path='/skills' component={Skills} />
-          <Route path='/project' component={Project} />
-          <Route path='/contact' component={Contact} />
-        </Switch>
-        <Footer />
-      </div>
+      <Navbar />
+      <Burger />
+      <Switch>
+      <div className="main-body">
+        <Route exact path='/' component={Home} />
+        <Route path='/aboutme' component={AboutMe} />
+        <Route path='/skills' component={Skills2} />
+        <Route path='/projects' component={Project} />
+        <Route path='/contact' component={Contact} />
+        </div>
+      </Switch>
+      <Footer />
     </Router>
   );
 }
 
-const Home = () => {
-  return(
-     <header>
-        <img src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80" alt="" />
-        <div className='name'>
-          <h3>Hello, I am Yuuka Motobayashi and</h3>
-          <h1>Project Management Professinal, Front End Web Developer</h1>
-        </div>
-      </header>
-      
-  )
-}
 
 export default App;

@@ -4,13 +4,14 @@ import SkillCard from './SkillCard';
 const SkillContainer = (props) => {
   return(
     <>
-     <h1>Skills</h1>
+     <h1>Programming</h1>
      <div className="skillcontainer">
        {
          props.list.map(
            eachList => <SkillCard {...eachList} key={eachList.skill} />
          )
        }
+       
      </div>
     </>  
     
