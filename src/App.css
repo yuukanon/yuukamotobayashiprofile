@@ -604,6 +604,7 @@ input {
     .navOpen a {
       color:#eca4a6;
       text-decoration: none;
+      border: none;
     }
 
     .navOff {
