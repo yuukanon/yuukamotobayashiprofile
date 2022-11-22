@@ -16,13 +16,13 @@
     "react-card-flip": "^1.0.11",
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^16.13.1",
-    "react-donut": "^1.0.4",
+    "react-donut": "^1.1.4",
     "react-minimal-pie-chart": "^8.0.1",
     "react-modal": "^3.11.2",
     "react-moment": "^0.9.7",
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-slideshow-image": "^3.2.0"
   },
   "scripts": {
